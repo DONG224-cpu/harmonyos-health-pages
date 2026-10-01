@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>用户协议 — 健康管理</title>
+<style>
+  :root {
+    --bg-1: #0b1220; --bg-2: #0d1e2a; --bg-3: #0a1a20;
+    --glass: rgba(255, 255, 255, 0.055);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --text: #e8eef2; --text-dim: #9db0bc; --text-faint: #6f8291;
+    --accent: #4fd1c5; --accent-soft: rgba(79, 209, 197, 0.14);
+    --warn: #f6c445; --warn-soft: rgba(246, 196, 69, 0.10);
+    --warn-border: rgba(246, 196, 69, 0.35);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "HarmonyOS Sans SC", "MiSans", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    background: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 55%, var(--bg-3) 100%);
+    color: var(--text); font-size: 15px; line-height: 1.85;
+    padding: max(20px, env(safe-area-inset-top)) 16px 48px;
+  }
+  .page { max-width: 760px; margin: 0 auto; }
+  header.hero { text-align: center; padding: 34px 8px 26px; }
+  .hero .logo {
+    width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 17px;
+    background: linear-gradient(145deg, rgba(79,209,197,.25), rgba(79,209,197,.06));
+    border: 1px solid rgba(79,209,197,.35);
+    display: flex; align-items: center; justify-content: center; font-size: 28px;
+  }
+  h1 { font-size: 25px; font-weight: 700; letter-spacing: .5px; }
+  .hero .sub { color: var(--text-dim); font-size: 13px; margin-top: 8px; }
+  .badge {
+    display: inline-block; margin: 14px 4px 0; padding: 4px 14px; border-radius: 999px;
+    font-size: 12.5px; color: var(--accent); background: var(--accent-soft);
+    border: 1px solid rgba(79,209,197,.3);
+  }
+  section {
+    background: var(--glass); border: 1px solid var(--glass-border); border-radius: 18px;
+    padding: 22px 22px 12px; margin-bottom: 16px;
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  }
+  h2 { font-size: 17.5px; font-weight: 700; display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+  h2 .no { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 1px; }
+  h3 { font-size: 14.5px; font-weight: 600; color: var(--text); margin: 14px 0 6px; }
+  p { color: var(--text-dim); margin-bottom: 10px; text-align: justify; }
+  p strong, li strong { color: var(--text); font-weight: 600; }
+  ul, ol { padding-left: 22px; color: var(--text-dim); margin-bottom: 10px; }
+  li { margin-bottom: 6px; text-align: justify; }
+  li::marker { color: var(--accent); }
+  .notice {
+    background: var(--warn-soft); border: 1px solid var(--warn-border); border-radius: 12px;
+    padding: 14px 16px; margin: 4px 0 12px; font-size: 14px; color: var(--text);
+  }
+  .notice .tt { color: var(--warn); font-weight: 700; margin-bottom: 4px; }
+  .notice p { color: var(--text); margin-bottom: 6px; }
+  footer { text-align: center; color: var(--text-faint); font-size: 12.5px; padding: 18px 0 6px; }
+  @media print {
+    body { background: #fff; color: #222; padding: 0; font-size: 12px; }
+    section { background: none; border: 1px solid #ddd; backdrop-filter: none; break-inside: avoid; }
+    h1, h2, h3, p strong, li strong { color: #000; }
+    p, ul, ol, .hero .sub, footer { color: #333; }
+    h2 .no, .badge { color: #0b6e66; }
+    .notice { background: #fffbe8; border-color: #e6d178; }
+    .notice p, .notice .tt { color: #000; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <div class="logo">🫀</div>
+  <h1>用户协议</h1>
+  <div class="sub">「健康管理」应用 · 个人开发者</div>
+  <span class="badge">生效日期：2026 年 10 月 1 日</span>
+  <span class="badge">版本：v1.0</span>
+</header>
+
+<div class="notice">
+  <div class="tt">⚠ 重要提示 — 请务必仔细阅读</div>
+  <p>本应用<strong>不是医疗器械</strong>，不提供任何医疗诊断、治疗或用药建议；应用内的一切健康指标（身体恢复度、睡眠评分、耗力分数、训练负荷等）与 AI 生成的分析内容，<strong>仅作为健康生活方式的参考</strong>，不构成医学建议。如有身体不适或疾病，请及时前往正规医疗机构就诊。</p>
+</div>
+
+<section>
+  <h2><span class="no">01</span>协议的接受与修改</h2>
+  <p>本协议是你与「健康管理」应用开发者（以下简称"开发者"）之间就使用本应用服务所订立的协议。你在安装、激活或使用本应用时勾选同意或实际使用，即视为你已阅读并同意本协议全部内容。</p>
+  <p>开发者可能根据服务调整对本协议进行修订，修订后的协议将在应用内或发布渠道公布。若你继续使用本应用，视为接受修订后的协议；若不同意，请停止使用并卸载本应用。</p>
+</section>
+
+<section>
+  <h2><span class="no">02</span>服务说明</h2>
+  <ul>
+    <li>本应用是一款运行于 HarmonyOS 的<strong>个人健康管理工具</strong>，提供健康数据记录、统计展示、趋势分析与 AI 辅助解读功能；</li>
+    <li>本应用<strong>无需注册账号</strong>。你的全部数据存储于设备本地，具体处理方式见《隐私政策》；</li>
+    <li><strong>健康数据同步</strong>：在你授权后，本应用通过华为 Health Kit 只读同步步数、活动热量、锻炼记录、心率、心率变异性、静息心率、睡眠、血氧、体温、体重等数据；</li>
+    <li><strong>AI 功能</strong>：AI 分析能力依赖你自行配置的第三方 AI 服务接口，相关数据的传输与处理由你选择的服务商提供；</li>
+    <li>本应用按"现状"提供。开发者可能基于功能演进对服务内容进行调整、优化或部分功能下线。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">03</span>用户行为规范</h2>
+  <p>你在使用本应用时，承诺：</p>
+  <ul>
+    <li>遵守中华人民共和国法律法规及你所在地区的相关规定，不将本应用用于任何违法或侵权用途；</li>
+    <li>不对本应用进行逆向工程、反编译、反汇编，或以技术手段破坏、篡改本应用的正常运行；</li>
+    <li>自行妥善保管设备与你自己配置的 AI 服务 API 密钥，因你保管不善造成的损失由你自行承担；</li>
+    <li>在配置第三方 AI 服务或 MCP 服务器时，确保你已获得相应服务的合法使用授权，并遵守该第三方的服务条款。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">04</span>健康与医疗免责声明</h2>
+  <ul>
+    <li>本应用不是医疗器械，未取得任何医疗器械注册证或备案凭证，<strong>不能用于疾病的诊断、治疗、监测或预防</strong>；</li>
+    <li>应用内的身体恢复度、睡眠评分、耗力分数、训练负荷（ACWR）、心率区间、营养素摄入估算等指标，均基于公开的运动科学文献模型在设备本地计算，<strong>仅供一般性健康参考</strong>，可能存在误差，不能反映你的全部健康状态；</li>
+    <li>AI 生成的分析、建议与解读由第三方 AI 模型自动生成，<strong>可能存在错误、遗漏或不适用的内容</strong>，不代表开发者的立场，也不构成医疗建议、诊断或治疗方案；</li>
+    <li>你在开始或调整任何运动计划前，应结合自身状况谨慎评估，必要时咨询专业医师；孕期、患有慢性疾病或正在康复期的人群尤应注意；</li>
+    <li>你因使用本应用内容而做出的任何健康、运动、饮食决定及其后果，由你自行承担。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">05</span>AI 服务与第三方服务</h2>
+  <ul>
+    <li>本应用的 AI 功能需要你自行配置第三方 AI 服务接口。你与该第三方之间的权利义务适用其服务条款与隐私政策，与开发者无涉；</li>
+    <li>因第三方服务不可用、限流、变更或终止导致 AI 功能异常或中断的，开发者不承担责任，但会尽力在应用内给出提示；</li>
+    <li>你通过 MCP 配置的外部服务由你自主选择与管理，使用该等服务产生的风险由你自行承担。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">06</span>数据与责任</h2>
+  <ul>
+    <li>本应用的全部数据仅存储于你的设备本地。因<strong>设备丢失、损坏、系统故障、恢复出厂设置、卸载应用</strong>等原因导致的数据丢失，请自行承担，建议你对重要数据自行备份；</li>
+    <li>你录入数据的真实、准确、完整由你负责，依赖错误数据产生的统计结果仅供参考。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">07</span>知识产权</h2>
+  <ul>
+    <li>本应用的界面设计、代码、图标与文档等知识产权归开发者所有，未经许可不得复制、传播或用于商业用途；</li>
+    <li>你录入及同步至本地的健康数据归你本人所有。开发者不主张对你数据的任何权利；</li>
+    <li>本应用使用的华为 Health Kit 等第三方服务的商标与权利归其权利人所有。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">08</span>服务的变更与终止</h2>
+  <ul>
+    <li>你可以随时停止使用本应用；卸载本应用即视为本协议终止，本地数据同时被删除；</li>
+    <li>开发者有权基于业务需要变更、中断或终止部分或全部服务。若发生重大变更，将通过应用内或发布渠道公告。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">09</span>免责声明与责任限制</h2>
+  <ul>
+    <li>本应用按"现状"提供，在法律允许的最大范围内，开发者不对本应用的适用性、无错误或不中断作出明示或默示的保证；</li>
+    <li>对于因使用或无法使用本应用导致的间接、附带、特殊或后果性损失（包括但不限于数据丢失、利润损失），开发者在法律允许的最大范围内不承担责任；</li>
+    <li>因不可抗力、第三方服务（含 AI 服务商、华为运动健康服务）故障或你的不当使用导致的损失，开发者不承担责任；</li>
+    <li>在任何情形下，开发者对你的全部责任以法律规定的最低限度为上限。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">10</span>法律适用与争议解决</h2>
+  <p>本协议的订立、履行与解释适用中华人民共和国法律（不含港澳台地区法律及冲突法规范）。你与开发者因本协议产生的争议，应首先友好协商解决；协商不成的，任何一方均可向开发者所在地有管辖权的人民法院提起诉讼。</p>
+</section>
+
+<section>
+  <h2><span class="no">11</span>联系我们</h2>
+  <p>如你对本协议或本应用有任何疑问、意见或建议，可通过以下方式联系开发者：</p>
+  <p><strong>联系邮箱</strong>：yidong.zhong@qq.com</p>
+</section>
+
+<footer>「健康管理」用户协议 · v1.0 · 2026-10-01</footer>
+</div>
+</body>
+</html>

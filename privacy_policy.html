@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>隐私政策 — 健康管理</title>
+<style>
+  :root {
+    --bg-1: #0b1220; --bg-2: #0d1e2a; --bg-3: #0a1a20;
+    --glass: rgba(255, 255, 255, 0.055);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --text: #e8eef2; --text-dim: #9db0bc; --text-faint: #6f8291;
+    --accent: #4fd1c5; --accent-soft: rgba(79, 209, 197, 0.14);
+    --warn: #f6c445; --warn-soft: rgba(246, 196, 69, 0.10);
+    --warn-border: rgba(246, 196, 69, 0.35);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "HarmonyOS Sans SC", "MiSans", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    background: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 55%, var(--bg-3) 100%);
+    color: var(--text); font-size: 15px; line-height: 1.85;
+    padding: max(20px, env(safe-area-inset-top)) 16px 48px;
+  }
+  .page { max-width: 760px; margin: 0 auto; }
+  header.hero { text-align: center; padding: 34px 8px 26px; }
+  .hero .logo {
+    width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 17px;
+    background: linear-gradient(145deg, rgba(79,209,197,.25), rgba(79,209,197,.06));
+    border: 1px solid rgba(79,209,197,.35);
+    display: flex; align-items: center; justify-content: center; font-size: 28px;
+  }
+  h1 { font-size: 25px; font-weight: 700; letter-spacing: .5px; }
+  .hero .sub { color: var(--text-dim); font-size: 13px; margin-top: 8px; }
+  .badge {
+    display: inline-block; margin: 14px 4px 0; padding: 4px 14px; border-radius: 999px;
+    font-size: 12.5px; color: var(--accent); background: var(--accent-soft);
+    border: 1px solid rgba(79,209,197,.3);
+  }
+  section {
+    background: var(--glass); border: 1px solid var(--glass-border); border-radius: 18px;
+    padding: 22px 22px 12px; margin-bottom: 16px;
+    backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  }
+  h2 { font-size: 17.5px; font-weight: 700; display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+  h2 .no { color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 1px; }
+  h3 { font-size: 14.5px; font-weight: 600; color: var(--text); margin: 14px 0 6px; }
+  p { color: var(--text-dim); margin-bottom: 10px; text-align: justify; }
+  p strong, li strong { color: var(--text); font-weight: 600; }
+  ul, ol { padding-left: 22px; color: var(--text-dim); margin-bottom: 10px; }
+  li { margin-bottom: 6px; text-align: justify; }
+  li::marker { color: var(--accent); }
+  .highlight {
+    background: var(--warn-soft); border: 1px solid var(--warn-border); border-radius: 12px;
+    padding: 12px 16px; margin: 4px 0 12px; color: var(--text); font-size: 14px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 6px 0 12px; font-size: 13.5px; }
+  th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,.08); }
+  th { color: var(--accent); font-weight: 600; white-space: nowrap; }
+  td { color: var(--text-dim); }
+  td:first-child { color: var(--text); white-space: nowrap; }
+  footer { text-align: center; color: var(--text-faint); font-size: 12.5px; padding: 18px 0 6px; }
+  @media print {
+    body { background: #fff; color: #222; padding: 0; font-size: 12px; }
+    section { background: none; border: 1px solid #ddd; backdrop-filter: none; break-inside: avoid; }
+    h1, h2, h3, p strong, li strong, td:first-child { color: #000; }
+    p, ul, ol, td, .hero .sub, footer { color: #333; }
+    h2 .no, .badge, th { color: #0b6e66; }
+    .highlight { background: #fffbe8; border-color: #e6d178; color: #000; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <div class="logo">🫀</div>
+  <h1>隐私政策</h1>
+  <div class="sub">「健康管理」应用 · 个人开发者</div>
+  <span class="badge">生效日期：2026 年 10 月 1 日</span>
+  <span class="badge">版本：v1.0</span>
+</header>
+
+<section>
+  <h2><span class="no">01</span>引言</h2>
+  <p>「健康管理」（以下简称"本应用"）是一款运行于 HarmonyOS 的个人健康管理应用，由个人开发者（以下简称"开发者"或"我们"）提供。我们深知个人健康数据的高度敏感性，因此本应用在架构上遵循<strong>"数据不出设备"</strong>的隐私优先原则：</p>
+  <ul>
+    <li>本应用<strong>无需注册、无需登录</strong>，不建立任何账号体系；</li>
+    <li>你的所有健康数据均<strong>仅存储在你的设备本地</strong>，我们没有服务器，不以任何形式收集、上传或留存你的数据；</li>
+    <li>仅当你主动使用 AI 分析、MCP 等联网功能时，相关数据才会按你的配置发送到你指定的第三方服务，详见下文第 5 条。</li>
+  </ul>
+  <p>请在使用前仔细阅读本政策。使用本应用即表示你理解并同意本政策的内容。</p>
+</section>
+
+<section>
+  <h2><span class="no">02</span>我们处理的信息</h2>
+  <h3>2.1 来自华为运动健康服务（Health Kit）的数据</h3>
+  <p>经你<strong>主动授权</strong>后，本应用通过华为 Health Kit <strong>只读</strong>同步以下数据，用于本地展示、统计与 AI 分析，<strong>不会向 Health Kit 写入任何数据</strong>：</p>
+  <table>
+    <tr><th>数据类别</th><th>具体内容</th></tr>
+    <tr><td>日常活动</td><td>步数、活动热量</td></tr>
+    <tr><td>锻炼记录</td><td>锻炼类型、时长、消耗，以及锻炼过程心率采样明细</td></tr>
+    <tr><td>心率</td><td>心率采样记录（用于日间平均心率、心率下降等指标）</td></tr>
+    <tr><td>心脏健康</td><td>静息心率、心率变异性（HRV）</td></tr>
+    <tr><td>睡眠</td><td>睡眠记录、时长、深睡/浅睡/REM 分段、就寝与起床时间</td></tr>
+    <tr><td>血氧</td><td>血氧饱和度（SpO₂）</td></tr>
+    <tr><td>体温</td><td>体温/腕温记录</td></tr>
+    <tr><td>体重</td><td>体重测量记录</td></tr>
+    <tr><td>历史数据</td><td>首次授权后回读近 1 个月历史数据，用于初始化统计基线</td></tr>
+  </table>
+  <p>你可以在设备"设置"或华为运动健康 App 中随时<strong>撤销授权</strong>；撤销后本应用将停止读取相应数据，已同步至本地的数据仍保存在你的设备上，可由你随时删除。</p>
+  <h3>2.2 你主动录入的信息</h3>
+  <ul>
+    <li>饮食记录、包装食品库、运动记录、体重/体脂记录；</li>
+    <li>身体档案：性别、身高、年龄（用于基础代谢与最大心率估算）；</li>
+    <li>体重/饮食计划目标；</li>
+    <li>AI 对话内容与内置技能配置。</li>
+  </ul>
+  <h3>2.3 AI 服务配置信息</h3>
+  <p>若你启用 AI 功能，需要在本地配置 AI 服务地址与 API 密钥。该配置<strong>仅保存在你的设备本地</strong>，不会传输给开发者或任何第三方。</p>
+</section>
+
+<section>
+  <h2><span class="no">03</span>数据的使用</h2>
+  <p>上述数据仅在你的设备上用于以下目的：</p>
+  <ul>
+    <li>健康指标计算与展示：身体恢复度、睡眠质量、运动耗力、训练负荷、饮食营养与热量平衡等；</li>
+    <li>趋势统计：按日/周/月生成可视化曲线与相对个人基线的状态判断；</li>
+    <li>体重计划：进度追踪与目标曲线对比；</li>
+    <li>AI 分析：在你启用 AI 功能时，将与你提问相关的数据摘要发送给你配置的 AI 服务以生成解读与建议。</li>
+  </ul>
+  <p>我们不会将你的数据用于用户画像、广告、营销或算法推荐，也不进行任何自动化决策。</p>
+</section>
+
+<section>
+  <h2><span class="no">04</span>数据的存储</h2>
+  <ul>
+    <li><strong>存储位置</strong>：全部数据存储于设备本地的应用沙箱数据库中，不上传云端、不同步至开发者的任何服务器；</li>
+    <li><strong>存储期限</strong>：数据持续保存在本地，直至你手动删除相应记录、使用数据清除功能或卸载本应用；卸载后所有本地数据即被删除，且无法恢复；</li>
+    <li><strong>风险提示</strong>：设备丢失、损坏或卸载将导致本地数据不可恢复，请自行评估是否需要备份。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">05</span>数据的对外提供</h2>
+  <p>本应用默认<strong>不进行任何网络数据传输</strong>（Health Kit 同步除外）。仅在以下由你主动触发或配置的情形下，数据才会离开你的设备：</p>
+  <ul>
+    <li><strong>AI 分析功能</strong>：当你在对话或各详情页使用 AI 分析时，本应用会将与你请求相关的健康数据摘要（如当日睡眠、HRV、静息心率、步数、饮食记录、身体档案等）通过 HTTPS 发送至<strong>你自行配置的 AI 服务商接口</strong>（如 OpenAI、Anthropic 或其他兼容服务）。这些数据在该服务商侧的处理受其自身隐私政策与条款约束，请你在配置前查阅并知悉；</li>
+    <li><strong>MCP 服务</strong>：若你配置了 MCP（Model Context Protocol）服务器地址，本应用会按你的指令与该服务器通信；</li>
+    <li><strong>系统分享</strong>：当你使用分享功能将健康卡片、截图等分享到其他应用时，分享内容由你主动选择并交由系统分享服务处理。</li>
+  </ul>
+  <p>除上述情形外，我们不向任何第三方提供你的个人信息；本应用<strong>不嵌入任何统计、广告或追踪 SDK</strong>。</p>
+</section>
+
+<section>
+  <h2><span class="no">06</span>权限说明</h2>
+  <ul>
+    <li><strong>网络访问（ohos.permission.INTERNET / GET_NETWORK_INFO）</strong>：用于 AI 服务通信、网络可用性检测与 Health Kit 同步，仅在你使用相应功能时产生流量；</li>
+    <li><strong>健康数据读取</strong>：通过华为 Health Kit 授权流程获取（见第 2.1 条），属于华为运动健康服务的数据授权，非系统敏感权限；</li>
+    <li><strong>图片选择</strong>：AI 截图解析功能使用系统安全图库选择器，仅处理你明确选择的单张图片，无需图库权限。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">07</span>未成年人保护</h2>
+  <p>本应用面向具有完全民事行为能力的成年人，不面向 14 周岁以下儿童。若你是未满 14 周岁的未成年人，请勿使用本应用；若你是未成年人的监护人，发现被监护人在未获你同意的情况下使用本应用，可卸载该应用以删除全部本地数据。</p>
+</section>
+
+<section>
+  <h2><span class="no">08</span>你的权利</h2>
+  <ul>
+    <li><strong>查看与更正</strong>：你可以在各功能页面随时查看、修改或删除自己录入与同步的记录；</li>
+    <li><strong>删除</strong>：你可以在应用内删除单条记录或整批清除数据，也可以直接卸载应用以删除全部本地数据；</li>
+    <li><strong>撤回授权</strong>：你可以随时在系统设置或华为运动健康 App 中撤销 Health Kit 数据授权；</li>
+    <li><strong>关闭联网功能</strong>：你可以不配置或随时清空 AI 服务配置，使本应用不产生任何对外的数据传输。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="no">09</span>政策的更新</h2>
+  <p>随着应用功能演进，本政策可能适时更新。更新后的政策将在应用内或发布渠道公布，并标注生效日期。<strong>重大变更</strong>（例如新增数据类型或新增对外提供数据的场景）会以显著方式提示，若你不同意变更内容，可选择停止使用并卸载本应用。</p>
+</section>
+
+<section>
+  <h2><span class="no">10</span>联系我们</h2>
+  <p>如你对本政策或个人信息处理有任何疑问、意见或投诉，可通过以下方式联系开发者：</p>
+  <p><strong>联系邮箱</strong>：yidong.zhong@qq.com</p>
+  <p>我们将在收到你的反馈后尽快（原则上不超过 15 个工作日）予以回复。</p>
+</section>
+
+<footer>「健康管理」隐私政策 · v1.0 · 2026-10-01</footer>
+</div>
+</body>
+</html>
